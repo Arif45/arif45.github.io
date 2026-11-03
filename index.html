@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Md. Ariful Islam | Senior Software Engineer</title>
-    <meta name="description" content="Senior Software Engineer with 7+ years building resilient microservices, high-scale Android mobile applications, blockchain transaction orchestration, and cross-border financial systems. Skilled in Java, Kotlin, Go, C/C++, Kafka, and event-driven architectures.">
-    <meta name="keywords" content="Md. Ariful Islam, Senior Software Engineer, Backend Engineer, Android Engineer, Java, Kotlin, Go, Golang, C, C++, Kafka, Distributed Systems, Fintech, Blockchain, Dhaka Bangladesh">
+    <meta name="description" content="Senior Software Engineer with 7+ years building resilient microservices, high-scale Android mobile applications, custodial blockchain orchestration, and AI-native engineering workflows (Claude, Cursor, subagents). Skilled in Java, Kotlin, Go, C/C++, and Kafka.">
+    <meta name="keywords" content="Md. Ariful Islam, Senior Software Engineer, Backend Engineer, Android Engineer, Java, Kotlin, Go, Golang, C, C++, Kafka, Claude, Cursor, AI Subagents, Distributed Systems, Fintech, Blockchain, Dhaka Bangladesh">
     <meta name="author" content="Md. Ariful Islam">
     
     <!-- Open Graph / Meta -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Md. Ariful Islam | Senior Software Engineer">
-    <meta property="og:description" content="Senior Software Engineer with 7+ years building resilient microservices, high-scale Android mobile applications, blockchain transaction orchestration, and cross-border financial systems.">
+    <meta property="og:description" content="Senior Software Engineer with 7+ years building resilient microservices, high-scale Android mobile applications, custodial blockchain orchestration, and AI-native workflows (Claude, Cursor, subagents).">
     <meta property="og:url" content="https://arif45.github.io/">
 
     <!-- Favicon (Terminal Icon) -->
@@ -250,7 +250,7 @@
 
                     <!-- Bio Paragraph -->
                     <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
-                        Senior backend and systems engineer with <span class="text-white font-semibold">7+ years of track record</span> architecting resilient microservices, high-scale Android mobile applications serving millions of users, blockchain transaction orchestration, and cross-border financial engines. Specialized in <span class="text-cyan-400 font-medium">Java</span>, <span class="text-cyan-400 font-medium">Kotlin</span>, <span class="text-cyan-400 font-medium">Go</span>, <span class="text-cyan-400 font-medium">C / C++</span>, <span class="text-cyan-400 font-medium">Apache Kafka</span>, and event-driven distributed systems.
+                        Senior backend and systems engineer with <span class="text-white font-semibold">7+ years of track record</span> architecting resilient microservices, high-scale Android mobile applications serving millions of users, custodial blockchain transaction orchestration, and cross-border financial engines. Specialized in <span class="text-cyan-400 font-medium">Java</span>, <span class="text-cyan-400 font-medium">Kotlin</span>, <span class="text-cyan-400 font-medium">Go</span>, <span class="text-cyan-400 font-medium">C / C++</span>, and event-driven distributed systems — augmented by <span class="text-purple-400 font-medium">AI-native developer workflows</span> with Claude, Cursor, and multi-agent subagent orchestration.
                     </p>
 
                     <!-- Action Buttons -->
@@ -333,17 +333,19 @@
     <span class="text-slate-200">Name</span>       <span class="text-cyan-400">string</span>
     <span class="text-slate-200">Title</span>      <span class="text-cyan-400">string</span>
     <span class="text-slate-200">Core</span>       []<span class="text-cyan-400">string</span>
+    <span class="text-slate-200">AIWorkflow</span> <span class="text-cyan-400">string</span>
     <span class="text-slate-200">Protocols</span>  []<span class="text-cyan-400">string</span>
     <span class="text-slate-200">Resilient</span>  <span class="text-cyan-400">bool</span>
 }
 
 <span class="text-purple-400">func</span> <span class="text-blue-400">GetAriful</span>() <span class="text-cyan-300">Profile</span> {
     <span class="text-purple-400">return</span> <span class="text-cyan-300">Profile</span>{
-        <span class="text-slate-200">Name</span>:      <span class="text-emerald-400">"Md. Ariful Islam"</span>,
-        <span class="text-slate-200">Title</span>:     <span class="text-emerald-400">"Senior Software Engineer"</span>,
-        <span class="text-slate-200">Core</span>:      []<span class="text-cyan-400">string</span>{<span class="text-emerald-400">"Java"</span>, <span class="text-emerald-400">"Kotlin"</span>, <span class="text-emerald-400">"Go"</span>, <span class="text-emerald-400">"C/C++"</span>, <span class="text-emerald-400">"Kafka"</span>},
-        <span class="text-slate-200">Protocols</span>: []<span class="text-cyan-400">string</span>{<span class="text-emerald-400">"ETH"</span>, <span class="text-emerald-400">"SOL"</span>, <span class="text-emerald-400">"MATIC"</span>, <span class="text-emerald-400">"BASE"</span>},
-        <span class="text-slate-200">Resilient</span>: <span class="text-amber-400">true</span>,
+        <span class="text-slate-200">Name</span>:       <span class="text-emerald-400">"Md. Ariful Islam"</span>,
+        <span class="text-slate-200">Title</span>:      <span class="text-emerald-400">"Senior Software Engineer"</span>,
+        <span class="text-slate-200">Core</span>:       []<span class="text-cyan-400">string</span>{<span class="text-emerald-400">"Java"</span>, <span class="text-emerald-400">"Kotlin"</span>, <span class="text-emerald-400">"Go"</span>, <span class="text-emerald-400">"C/C++"</span>},
+        <span class="text-slate-200">AIWorkflow</span>: <span class="text-purple-400">"Claude + Subagents"</span>,
+        <span class="text-slate-200">Protocols</span>:  []<span class="text-cyan-400">string</span>{<span class="text-emerald-400">"ETH"</span>, <span class="text-emerald-400">"SOL"</span>, <span class="text-emerald-400">"MATIC"</span>, <span class="text-emerald-400">"BASE"</span>},
+        <span class="text-slate-200">Resilient</span>:  <span class="text-amber-400">true</span>,
     }
 }</pre>
                         </div>
@@ -352,9 +354,10 @@
                         <div id="tab-content-json" class="hidden p-5 font-mono text-xs leading-relaxed overflow-x-auto text-slate-300">
 <pre>{
   <span class="text-cyan-400">"engineer"</span>: <span class="text-emerald-400">"Md. Ariful Islam"</span>,
-  <span class="text-cyan-400">"focus"</span>: <span class="text-emerald-400">"Microservices &amp; Blockchain Orchestration"</span>,
+  <span class="text-cyan-400">"focus"</span>: <span class="text-emerald-400">"Microservices &amp; Custodial Blockchain"</span>,
   <span class="text-cyan-400">"active_company"</span>: <span class="text-emerald-400">"Fin.com"</span>,
   <span class="text-cyan-400">"languages"</span>: [<span class="text-emerald-400">"Java"</span>, <span class="text-emerald-400">"Kotlin"</span>, <span class="text-emerald-400">"Go"</span>, <span class="text-emerald-400">"C"</span>, <span class="text-emerald-400">"C++"</span>],
+  <span class="text-cyan-400">"ai_native"</span>: [<span class="text-purple-400">"Claude"</span>, <span class="text-purple-400">"Cursor"</span>, <span class="text-purple-400">"Subagents"</span>, <span class="text-purple-400">"Claude Architecture Rules"</span>],
   <span class="text-cyan-400">"event_bus"</span>: [<span class="text-emerald-400">"Apache Kafka"</span>, <span class="text-emerald-400">"Protobuf"</span>, <span class="text-emerald-400">"RabbitMQ"</span>],
   <span class="text-cyan-400">"devops"</span>: [<span class="text-emerald-400">"Docker"</span>, <span class="text-emerald-400">"Kubernetes"</span>, <span class="text-emerald-400">"ArgoCD"</span>, <span class="text-emerald-400">"Grafana"</span>],
   <span class="text-cyan-400">"status"</span>: <span class="text-amber-400">"operational"</span>
@@ -367,6 +370,7 @@
                             <div class="flex flex-wrap gap-1.5">
                                 <button onclick="runCommand('help')" class="px-2 py-0.5 rounded bg-slate-800 text-cyan-300 hover:bg-slate-700 transition">help</button>
                                 <button onclick="runCommand('skills')" class="px-2 py-0.5 rounded bg-slate-800 text-cyan-300 hover:bg-slate-700 transition">skills</button>
+                                <button onclick="runCommand('ai')" class="px-2 py-0.5 rounded bg-purple-950 text-purple-300 border border-purple-800/80 hover:bg-purple-900 transition">ai</button>
                                 <button onclick="runCommand('experience')" class="px-2 py-0.5 rounded bg-slate-800 text-cyan-300 hover:bg-slate-700 transition">experience</button>
                                 <button onclick="runCommand('contact')" class="px-2 py-0.5 rounded bg-slate-800 text-cyan-300 hover:bg-slate-700 transition">contact</button>
                                 <button onclick="runCommand('clear')" class="px-2 py-0.5 rounded bg-slate-800 text-slate-400 hover:bg-slate-700 transition">clear</button>
@@ -622,6 +626,7 @@
                                 <li><strong class="text-white">KYC &amp; RFI Compliance Automation:</strong> Constructed customer onboarding orchestration, PEP screening, and automated Request for Information (RFI) compliance workflows handling thousands of user verification webhooks.</li>
                                 <li><strong class="text-white">Asynchronous Task Pipelines &amp; Storage:</strong> Configured resilient retry pipelines with RabbitMQ dead-letter exchanges and multi-tiered Redis caching, exposing high-concurrency REST endpoints backed by partitioned PostgreSQL.</li>
                                 <li><strong class="text-white">Backend Deployment &amp; Observability:</strong> Containerized backend microservices using Docker and deployed workloads to Kubernetes clusters through GitLab CI/CD and ArgoCD pipelines; instrumented services with Prometheus metrics, structured logs, and Grafana monitoring alerts.</li>
+                                <li><strong class="text-white">AI-Native Engineering &amp; Subagents:</strong> Maintained structured Claude architectural rules and context guidelines across backend projects; utilized Cursor, ChatGPT, and autonomous AI subagents for code generation, automated test synthesis, and API verification, significantly accelerating production velocity.</li>
                             </ul>
                         </div>
 
@@ -638,6 +643,7 @@
                             <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-medium">Kubernetes</span>
                             <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-medium">ArgoCD</span>
                             <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-medium">RabbitMQ</span>
+                            <span class="px-2.5 py-1 rounded-md bg-purple-950/70 text-purple-300 border border-purple-800/60 text-xs font-medium">Claude / AI Subagents</span>
                         </div>
                     </div>
                 </div>
@@ -918,23 +924,28 @@
                 </div>
 
                 <!-- AI-Assisted Workflows -->
-                <div class="skill-category-card spotlight-card p-6 space-y-4" data-skills="cursor claude chatgpt llm ai assisted workflows code velocity testing ai native development">
+                <div class="skill-category-card spotlight-card p-6 space-y-4" data-skills="cursor claude chatgpt subagent subagents agents llm ai assisted workflows code velocity testing ai native development prompt architecture context rules">
                     <div class="flex items-center justify-between">
                         <div class="w-10 h-10 rounded-xl bg-purple-950 flex items-center justify-center text-purple-400 text-lg">
                             <i class="fa-solid fa-wand-magic-sparkles"></i>
                         </div>
-                        <span class="text-[11px] font-semibold text-purple-400 bg-purple-950/60 border border-purple-800/80 px-2 py-0.5 rounded">Productivity</span>
+                        <span class="text-[11px] font-semibold text-purple-400 bg-purple-950/60 border border-purple-800/80 px-2 py-0.5 rounded">Autonomous Agents</span>
                     </div>
                     <div>
-                        <h3 class="font-bold text-white text-base">AI-Native Engineering</h3>
-                        <p class="text-xs text-slate-400 mt-1">AI-augmented velocity &amp; automated test synthesis</p>
+                        <h3 class="font-bold text-white text-base">AI-Native Engineering &amp; Agent Workflows</h3>
+                        <p class="text-xs text-slate-400 mt-1">Claude architecture, subagent orchestration &amp; AI-augmented velocity</p>
                     </div>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Leverages Claude, Cursor, and ChatGPT for production coding. Maintains structured Claude architecture context rules for every project, utilizing autonomous subagents for system design, code generation, and automated test synthesis.
+                    </p>
                     <div class="flex flex-wrap gap-1.5 pt-1">
-                        <span class="skill-tag px-2.5 py-1 rounded-md bg-slate-800 text-slate-200 text-xs font-medium">Cursor</span>
                         <span class="skill-tag px-2.5 py-1 rounded-md bg-slate-800 text-slate-200 text-xs font-medium">Claude</span>
+                        <span class="skill-tag px-2.5 py-1 rounded-md bg-slate-800 text-slate-200 text-xs font-medium">Cursor</span>
                         <span class="skill-tag px-2.5 py-1 rounded-md bg-slate-800 text-slate-200 text-xs font-medium">ChatGPT</span>
-                        <span class="skill-tag px-2.5 py-1 rounded-md bg-slate-800 text-slate-200 text-xs font-medium">LLM Code Velocity</span>
-                        <span class="skill-tag px-2.5 py-1 rounded-md bg-slate-800 text-slate-200 text-xs font-medium">Prompt Systems</span>
+                        <span class="skill-tag px-2.5 py-1 rounded-md bg-slate-800 text-slate-200 text-xs font-medium">AI Subagents</span>
+                        <span class="skill-tag px-2.5 py-1 rounded-md bg-slate-800 text-slate-200 text-xs font-medium">Claude Architecture Rules</span>
+                        <span class="skill-tag px-2.5 py-1 rounded-md bg-slate-800 text-slate-200 text-xs font-medium">Native AI Workflows</span>
+                        <span class="skill-tag px-2.5 py-1 rounded-md bg-slate-800 text-slate-200 text-xs font-medium">Test &amp; Code Synthesis</span>
                     </div>
                 </div>
 
@@ -1171,6 +1182,7 @@
             "Senior Software Engineer",
             "Java, Kotlin & Go Backend Builder",
             "Distributed Systems Specialist",
+            "AI-Native Developer & Agent Workflows",
             "Systems & C/C++ Engineering",
             "Fintech & Blockchain Architect"
         ];
@@ -1326,12 +1338,13 @@
 
         // Terminal Emulator Logic
         const terminalCommands = {
-            help: () => "Available commands: <strong>skills</strong>, <strong>experience</strong>, <strong>systems</strong>, <strong>contact</strong>, <strong>whoami</strong>, <strong>clear</strong>",
-            skills: () => "Languages: Java, Kotlin, Go, C, C++ | Systems: Echo, Apache Kafka, Protobuf, PostgreSQL, Redis, Kubernetes, Docker, Ethereum, Solana, Base.",
+            help: () => "Available commands: <strong>skills</strong>, <strong>ai</strong>, <strong>experience</strong>, <strong>systems</strong>, <strong>contact</strong>, <strong>whoami</strong>, <strong>clear</strong>",
+            skills: () => "Languages: Java, Kotlin, Go, C, C++ | AI: Claude, Cursor, Subagents | Systems: Kafka, Protobuf, PostgreSQL, Redis, Kubernetes, Docker, Blockchains.",
+            ai: () => "AI-Native Engineering: Claude, Cursor, ChatGPT. Maintains structured codebase architecture patterns &amp; orchestrates autonomous subagents for rapid code generation, automated testing, and accelerated velocity.",
             experience: () => "Senior Backend Engineer @ Fin.com (2025-Now)<br>Software Engineer II @ Pathao (2021-2025)<br>Software Engineer @ Samsung R&D (2019-2021)",
-            systems: () => "1. Fiat-Crypto On/Off-Ramp Engine<br>2. Cross-Chain Watcher & Settlement<br>3. Pathao 99.7% Crash-Free Mobility<br>4. Galaxy Watch WearOS & Tizen Core",
+            systems: () => "1. Fiat-Crypto On/Off-Ramp Engine<br>2. Custodial Cross-Chain Watcher & Settlement<br>3. Pathao 99.7% Crash-Free Mobility<br>4. Galaxy Watch WearOS & Tizen Core",
             contact: () => "Email: <a href='mailto:arif.islam.j@gmail.com' class='text-cyan-400 underline'>arif.islam.j@gmail.com</a><br>LinkedIn: <a href='https://www.linkedin.com/in/ariful45/' target='_blank' class='text-cyan-400 underline'>ariful45</a>",
-            whoami: () => "Md. Ariful Islam &bull; Senior Software Engineer with 7+ years building resilient microservices, high-scale Android mobile apps (serving millions with 99.7% crash-free stability), and blockchain orchestration engines.",
+            whoami: () => "Md. Ariful Islam &bull; Senior Software Engineer with 7+ years building resilient microservices, high-scale Android mobile apps (serving millions with 99.7% crash-free stability), custodial blockchain orchestration, and AI-native engineering workflows (Claude, Cursor, Subagents).",
             clear: () => "CLEAR_COMMAND"
         };
 
