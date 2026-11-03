@@ -458,9 +458,9 @@
                         </span>
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-white">Cross-Chain Orchestrator &amp; Watcher</h3>
+                        <h3 class="text-lg font-bold text-white">Custodial Cross-Chain Orchestrator &amp; Watcher</h3>
                         <p class="text-sm text-slate-300 mt-1 leading-relaxed">
-                            Built full-lifecycle orchestration across Ethereum, Solana, Polygon, and Base. Designed an automated Watcher service detecting stuck transactions and safely re-initiating them.
+                            Built custodial wallet architecture across Ethereum, Solana, Polygon, and Base with dedicated addresses assigned to customers. Designed an automated Watcher service detecting stuck transactions and safely re-initiating them.
                         </p>
                     </div>
                     <div class="space-y-2 text-xs text-slate-400">
@@ -514,7 +514,7 @@
                         <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-xs">Kotlin</span>
                         <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-xs">Coroutines</span>
                         <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-xs">MVP/Clean</span>
-                        <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-xs">Room/SQLite</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-xs">SharedPreferences</span>
                     </div>
                     <button onclick="openArchitectureModal('pathao')" class="w-full py-2 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-emerald-300 text-xs font-semibold flex items-center justify-center gap-2 border border-slate-700/80 hover:border-emerald-500/40 transition">
                         <i class="fa-solid fa-diagram-project"></i> View Architecture Pipeline
@@ -616,12 +616,12 @@
                             </h4>
                             <ul class="list-disc list-outside ml-4 space-y-2.5 text-slate-300 text-sm leading-relaxed">
                                 <li><strong class="text-white">Fiat-Crypto On/Off-Ramp Routing Engine:</strong> Architected and built a high-throughput liquidity conversion router in Go (Echo framework), orchestrating dynamic order execution across 2 tier-1 vendor partners with automated failover, spread optimization, and sub-second quote dispatch.</li>
-                                <li><strong class="text-white">Cross-Chain Transaction Orchestration:</strong> Engineered non-custodial transaction pipelines across Ethereum, Solana, Polygon, and Base. Built custom nonce sequencing, dynamic EIP-1559 gas fee estimation, multi-signature verification, and chain finality detection.</li>
+                                <li><strong class="text-white">Custodial Wallet &amp; Transaction Orchestration:</strong> Engineered custodial wallet infrastructure across Ethereum, Solana, Polygon, and Base, generating and assigning dedicated deposit addresses to each customer.</li>
                                 <li><strong class="text-white">Automated Watcher &amp; Self-Healing Daemons:</strong> Designed an autonomous mempool Watcher daemon that tracks pending, dropped, or stuck on-chain transactions via webhook event feeds and cron reconciliation, executing automated gas fee acceleration (speed-ups) or idempotent re-dispatch with zero duplicate payout risk.</li>
                                 <li><strong class="text-white">Event-Driven Architecture with Kafka &amp; Protobuf:</strong> Designed strictly typed microservice event pipelines using Apache Kafka and Protobuf schemas; implemented transactional outbox patterns with PostgreSQL and distributed Redis idempotency locks to guarantee exactly-once processing semantics across consumers.</li>
                                 <li><strong class="text-white">KYC &amp; RFI Compliance Automation:</strong> Constructed customer onboarding orchestration, PEP screening, and automated Request for Information (RFI) compliance workflows handling thousands of user verification webhooks.</li>
                                 <li><strong class="text-white">Asynchronous Task Pipelines &amp; Storage:</strong> Configured resilient retry pipelines with RabbitMQ dead-letter exchanges and multi-tiered Redis caching, exposing high-concurrency REST endpoints backed by partitioned PostgreSQL.</li>
-                                <li><strong class="text-white">GitOps &amp; Cloud Infrastructure:</strong> Deployed containerized workloads on Kubernetes managed via ArgoCD and GitLab CI/CD pipelines, establishing end-to-end monitoring using Prometheus, Grafana alerts, and structured distributed tracing.</li>
+                                <li><strong class="text-white">Backend Deployment &amp; Observability:</strong> Containerized backend microservices using Docker and deployed workloads to Kubernetes clusters through GitLab CI/CD and ArgoCD pipelines; instrumented services with Prometheus metrics, structured logs, and Grafana monitoring alerts.</li>
                             </ul>
                         </div>
 
@@ -714,7 +714,7 @@
                                 <li><strong class="text-white">Real-Time Geospatial Tracking &amp; Matchmaking:</strong> Implemented battery-efficient background GPS tracking, map polyline route rendering, and low-latency bidirectional network communication for driver-passenger dispatch, dynamic surge pricing, and accurate ETA calculations.</li>
                                 <li><strong class="text-white">Sustained 99.7% Crash-Free Stability:</strong> Spearheaded client application health and stability metrics, maintaining a 99.7%+ crash-free user rate across millions of monthly sessions through proactive memory profiling, defensive state handling, and automated crash reporting triage.</li>
                                 <li><strong class="text-white">Architectural Modernization &amp; Kotlin Migration:</strong> Incrementally refactored complex legacy Java codebases into modern Kotlin utilizing MVP/Clean Architecture patterns and modular dependency injection (Hilt/Dagger), reducing technical debt and boosting team feature velocity by 25%.</li>
-                                <li><strong class="text-white">Offline-Resilient Courier Logistics Engine:</strong> Designed an offline-first synchronization engine using Room/SQLite and WorkManager, allowing couriers and delivery agents to complete parcel drop-offs, digital signature captures, and OTP validations in low-connectivity rural regions with zero data loss.</li>
+                                <li><strong class="text-white">Offline-Resilient Courier Logistics Engine:</strong> Designed a resilient local persistence and synchronization workflow using SharedPreferences and WorkManager, allowing couriers and delivery agents to complete parcel drop-offs, digital signature captures, and OTP validations in low-connectivity rural regions with zero data loss.</li>
                                 <li><strong class="text-white">Performance Tuning &amp; Cold Start Optimization:</strong> Profiled CPU execution and memory allocations using Android Studio Profiler and LeakCanary, reducing app cold-start launch time by over 30% and eliminating UI frame drops during map interactions.</li>
                                 <li><strong class="text-white">Mentorship &amp; Engineering Culture:</strong> Led architectural RFC discussions, standardized unit test coverage with JUnit &amp; MockK, and mentored junior engineers on asynchronous programming, clean code principles, and effective code reviews.</li>
                             </ul>
@@ -726,7 +726,7 @@
                             <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-medium">Coroutines &amp; Flow</span>
                             <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-medium">RxJava</span>
                             <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-medium">Hilt / Dagger</span>
-                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-medium">Room Database</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-medium">SharedPreferences</span>
                             <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-medium">Google Maps API</span>
                             <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-medium">Real-Time APIs</span>
                             <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-medium">LeakCanary</span>
@@ -882,8 +882,8 @@
                         <span class="text-[11px] font-semibold text-teal-400 bg-teal-950/60 border border-teal-800/80 px-2 py-0.5 rounded">Infra</span>
                     </div>
                     <div>
-                        <h3 class="font-bold text-white text-base">DevOps, Cloud &amp; Observability</h3>
-                        <p class="text-xs text-slate-400 mt-1">Container orchestration &amp; automated GitOps</p>
+                        <h3 class="font-bold text-white text-base">Deployment, Tooling &amp; Monitoring</h3>
+                        <p class="text-xs text-slate-400 mt-1">Docker containerization, CI/CD pipelines &amp; monitoring</p>
                     </div>
                     <div class="flex flex-wrap gap-1.5 pt-1">
                         <span class="skill-tag px-2.5 py-1 rounded-md bg-slate-800 text-slate-200 text-xs font-medium">Docker</span>
@@ -1640,13 +1640,13 @@
                 body: `
                     <div class="space-y-4">
                         <p class="text-sm text-slate-300">
-                            Orchestrates token transfers and liquidity movements across 4 major blockchain networks, with automated failure detection and nonce management.
+                            Orchestrates customer-assigned custodial wallet deposits, asset transfers, and liquidity settlement across 4 major blockchain networks with automated failure recovery.
                         </p>
                         <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-3 font-mono text-xs">
                             <div class="text-indigo-400 font-bold">Watcher Lifecycle:</div>
                             <div class="flex items-center gap-2 text-slate-200">
                                 <span class="w-6 h-6 rounded bg-indigo-900/60 text-indigo-400 flex items-center justify-center font-bold">1</span>
-                                <span>Transaction dispatched to node RPC (ETH, SOL, Polygon, Base) with persistent hash.</span>
+                                <span>Custodial deposit address assigned to customer; transactions dispatched to node RPC (ETH, SOL, Polygon, Base) with persistent hash.</span>
                             </div>
                             <div class="flex items-center gap-2 text-slate-200">
                                 <span class="w-6 h-6 rounded bg-indigo-900/60 text-indigo-400 flex items-center justify-center font-bold">2</span>
@@ -1677,7 +1677,7 @@
                             <div class="text-emerald-400 font-bold">Engineering Achievements:</div>
                             <div class="text-slate-300">&bull; Sustained 99.7% crash-free sessions across high-frequency GPS tracking sessions.</div>
                             <div class="text-slate-300">&bull; Real-time location dispatch and route optimization for driver-passenger matching.</div>
-                            <div class="text-slate-300">&bull; Clean modular architecture with offline-first local SQLite caching.</div>
+                            <div class="text-slate-300">&bull; Clean modular architecture with local persistence via SharedPreferences.</div>
                         </div>
                     </div>
                 `
